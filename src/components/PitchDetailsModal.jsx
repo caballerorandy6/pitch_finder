@@ -95,15 +95,13 @@ const PitchDetailsModal = ({ modal, setModal, pitch }) => {
                     as="h3"
                     className="text-lg leading-6 font-bold text-gray-900"
                   >
-                    <h1 className="text-2xl mb-2 font-semibold">
-                      {pitch_name}
-                    </h1>
+                    <p className="text-2xl mb-2 font-semibold">{pitch_name}</p>
                     <div className="rounded border-2 shadow p-4 font-normal flex justify-between mb-6 text-orange-400">
-                      <h3>{`Inning ${inning}`}</h3>
+                      <p>{`Inning ${inning}`}</p>
                       <p>{pitch_type}</p>
                       <p>{`(${batter_name} vs ${pitcher_name})`}</p>
                     </div>
-                    <h3 className="font-normal mb-2">Details</h3>
+                    <p className="font-normal mb-2">Details</p>
                     <div className="rounded border-2 shadow p-4 font-normal mb-4">
                       <p className="text-orange-400 mb-1 text-sm">
                         sz_top:{" "}
