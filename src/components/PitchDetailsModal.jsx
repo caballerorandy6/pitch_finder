@@ -3,7 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { roundNumber } from "../helpers/index.js";
 
 const PitchDetailsModal = ({ modal, setModal, pitch }) => {
-  console.log(pitch);
+  //console.log(pitch);
 
   const {
     pitch_name,
@@ -99,7 +99,7 @@ const PitchDetailsModal = ({ modal, setModal, pitch }) => {
                     <div className="rounded border-2 shadow p-4 font-normal flex justify-between mb-6 text-orange-400">
                       <p>{`Inning ${inning}`}</p>
                       <p>{pitch_type}</p>
-                      <p>{`(${batter_name} vs ${pitcher_name})`}</p>
+                      <p>{`(${batter_name}  vs ${pitcher_name})`}</p>
                     </div>
                     <p className="font-normal mb-2">Details</p>
                     <div className="rounded border-2 shadow p-4 font-normal mb-4">

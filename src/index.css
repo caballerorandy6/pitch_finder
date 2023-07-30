@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.resort:hover {
+  transform: scale(1.1);
+}
+
+.resort-button:hover {
+  transform: scale(1.03);
+}
