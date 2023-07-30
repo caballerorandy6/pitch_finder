@@ -30,9 +30,7 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     const getPitches = async () => {
       try {
-        const { data } = await axios(
-          "https://raw.githubusercontent.com/rd-astros/hiring-resources/master/pitches.json"
-        );
+        const { data } = await axios(import.meta.env.VITE_API_URL);
         setPitches(data);
       } catch (error) {
         console.log(error);
